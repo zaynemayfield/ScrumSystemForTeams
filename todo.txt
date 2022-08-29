@@ -1,0 +1,173 @@
+Remove available players from the dropdown list on edit scrum when they have been added
+
+Make End scrum page where person decides which ones will go back to backlog or will be deleted.
+
+
+Finance idea
+FINANCE
+id
+epicid
+scrumid
+backlogid
+userid
+item
+qnty
+cost
+location
+notes
+date
+time
+update
+
+
+Figure out database
+
+EPIC
+id
+userid
+datebegin
+dateend
+name
+details
+time
+update
+
+EPICPLAYERS
+id
+epicid
+userid
+status
+position
+time
+update
+
+
+BACKLOG
+id
+useridcreate
+epicid
+scrumid
+grabid
+name
+details
+status - suggested - new - prioritized - pointed - scrummed - blocked - quality - completed - delayed - deleted
+number
+avgpoints
+comments
+time
+update
+
+POINTS
+id
+backlogid
+userid
+points
+time
+update
+
+SCRUM
+id
+useridmaster
+name
+details
+datebegin
+dateend
+completedpoints
+players
+time
+update
+
+DAILYSCRUM
+scrumid
+notes
+time
+update
+
+
+CONTROLS
+id
+name
+description
+setting
+time
+update
+
+
+need to set points system
+
+
+***********Main Page
+List all Epics - click epic to see more details about it and change it if you are product owner or suggest a backlog item - Also place to fill out points on prioritized backlog items
+hr
+List current scrums you are associated with through players in scrum table - Click to go to scrum page that shows everything
+hr
+Under Each Scrum, list all the items available to grab - Have link next to it to grab it or show that you haved grabbed it and need to complete it - click to go to details, comments and change status
+
+***********Create Epic Page -DONE
+input name
+details
+datebegin
+dateend
+
+Submit
+
+***********Edit Epic Page - DONE
+input name
+details
+datebegin
+dateend
+
+Submit
+
+***********View Current Epics Page
+Show each epic and the backlog for it with the status
+below each backlog list have input to add one to it
+Submit
+
+***********Points Page
+Be able to see all of the backlogs and everyone's points they have assigned to them
+Be able to change each one
+Submit
+
+***********Create Scrum page
+Assign Scrum Master
+Set datebegin
+Set Dateend
+input name
+input details
+input players
+Assign Backlog Items to the Scrum - be able to edit the details easily and points
+list of all prioritized and pointed items with the different points from each member
+
+***********Edit Scrum page
+Assign Scrum Master
+Set datebegin
+Set Dateend
+input name
+input details
+input players
+Assign Backlog Items to the Scrum - be able to edit the details easily
+Change Completed Points
+
+
+***********Scrum page
+Show Scrum name
+Scrum Descriptions
+Scrum Start and End
+Show 3 categories
+Open
+grabbed
+complete
+other
+in each category show name - limited description - who owns it - the points - which epic
+On each one have the ability to grab it
+
+***********Grabbed Items page
+Ability to comments
+Ability to change status
+
+***********Daily Scrum Meeting
+Input notes
+Show completed scrum items
+Show uncompleted scrum items
+Show other status of items
